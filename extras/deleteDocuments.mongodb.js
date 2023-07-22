@@ -10,9 +10,7 @@
 // https://www.mongodb.com/docs/mongodb-vscode/playgrounds/
 
 // Select the database to use.
-use('cooker');
+use("cooker")
 
-// db.examples.updateOne({"title": "Tacos"}, { $push: {"likes": 60}});
-// db.examples.find({ "title": "Tacos" });
-db.examples.updateOne({ "title": "Tacos" }, { $pull: { "likes": 60 } });
-db.examples.find({ "title": "Tacos" }, {"likes": 1});
+//db.examples.find({}, { "title": 1 });
+db.examples.deleteOne({ _id: ObjectId("5ee69e393260aab97ea0d58e") })
